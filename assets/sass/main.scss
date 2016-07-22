@@ -2,10 +2,6 @@
 
 $green: #4a3;
 
-
-
-
-
 /* Normalize.css */
 section, footer, header, aside, nav {
     display: block;
@@ -59,15 +55,13 @@ a:hover {
             }
         }
     }
-}
-
-// # Navbar
+}// # Navbar
 
 // Jumbotrons
 .jumbotron {
     margin-top: -30px;
     .pt-heading{
-      background-color: #fff !important;  
+      background-color: #fff !important;
     }
 }
 
@@ -75,6 +69,47 @@ a:hover {
     margin-top: 30px;
     img {
         width: 100%;
-
     }
+}
+
+
+// iconlar? ortalamak i�in kod!!
+[class^="fa-cutlery"], [class*="fa-cutlery"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="glyphicon-scale"], [class*="glyphicon-scale"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bed"], [class*="fa-bed"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bicycle"], [class*="fa-bicycle"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+}
+
+.personal{
+  font-size: 18px;
+}
+.personal-p {
+  font-size: 14px;
+}
+
+.text-success {
+  color: #1abc9c !important;
+}
+
+.text-info {
+  color: #1abc9c !important;
 }
