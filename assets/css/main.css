@@ -71,4 +71,45 @@ a:hover {
   width: 100%;
 }
 
+[class^="fa-cutlery"], [class*="fa-cutlery"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="glyphicon-scale"], [class*="glyphicon-scale"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bed"], [class*="fa-bed"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bicycle"], [class*="fa-bicycle"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+}
+
+.personal {
+  font-size: 18px;
+}
+
+.personal-p {
+  font-size: 14px;
+}
+
+.text-success {
+  color: #1abc9c !important;
+}
+
+.text-info {
+  color: #1abc9c !important;
+}
+
 /*# sourceMappingURL=main.css.map */
