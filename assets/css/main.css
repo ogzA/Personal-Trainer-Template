@@ -1,64 +1,235 @@
-/*
-Error: Invalid CSS after "    width: ": expected expression (e.g. 1px, bold), was "%100;"
-        on line 142 of sass/main.scss
+/* Variables */
+/* Normalize.css */
+section, footer, header, aside, nav {
+  display: block;
+}
 
-137: 
-138: @media (min-width: 250px) {
-139:   .contact {
-140:     background-color: #1a1a1a;
-141:     height: 300px !important;
-142:     width: %100;
-143:     .mail {
-144:       font-size: 16px;
-145:     }
-146:     .address {
-147:       font-size: 16px;
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
-Backtrace:
-sass/main.scss:142
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:409:in `media_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    width: \": expected expression (e.g. 1px, bold), was \"%100;\"\A         on line 142 of sass/main.scss\A \A 137: \A 138: @media (min-width: 250px) {\A 139:   .contact {\A 140:     background-color: #1a1a1a;\A 141:     height: 300px !important;\A 142:     width: %100;\A 143:     .mail {\A 144:       font-size: 16px;\A 145:     }\A 146:     .address {\A 147:       font-size: 16px;"; }
+.clearfix {
+  clear: both;
+}
+
+a, a:visited {
+  outline: none;
+  color: #389dc1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar-toggle {
+  border-color: #1abc9c !important;
+}
+
+.navbar-collapse {
+  text-align: center !important;
+}
+.navbar-collapse ul.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-collapse ul.navbar-nav > li {
+  float: none !important;
+  display: inline-block !important;
+}
+.navbar-collapse ul.navbar-nav > li a {
+  font: 17px/1.3 'Open Sans', sans-serif;
+  color: #5e5b64;
+  letter-spacing: 1px;
+  padding: 18px 30px;
+  color: #fff !important;
+  text-decoration: none !important;
+  line-height: 40px;
+  text-transform: uppercase;
+  height: 82px;
+}
+.navbar-collapse ul.navbar-nav > li a:hover {
+  color: #1abc9c !important;
+  visibility: visible;
+  -webkit-transition: color 0.6s;
+  -moz-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+.jumbotron {
+  margin-top: -30px;
+}
+.jumbotron .pt-heading {
+  background-color: #fff !important;
+}
+
+.jumbotron-barbell {
+  margin-top: 30px;
+}
+.jumbotron-barbell img {
+  width: 100%;
+}
+
+[class^="fa-cutlery"], [class*="fa-cutlery"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="glyphicon-scale"], [class*="glyphicon-scale"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bed"], [class*="fa-bed"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px !important;
+}
+
+[class^="fa-bicycle"], [class*="fa-bicycle"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+}
+
+.personal {
+  font-size: 18px;
+}
+
+.personal-p {
+  font-size: 14px;
+}
+
+.text-success {
+  color: #1abc9c !important;
+}
+
+.text-info {
+  color: #1abc9c !important;
+}
+
+/* Contact lower  */
+@media (max-width: 1024px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 450px !important;
+  }
+
+  .contact-h2 {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 250px !important;
+  }
+  .contact .contact-h2 {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 100px !important;
+  }
+  .contact .contact-h2 {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+/*@media (min-width: 250px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 300px !important;
+    width: %100;
+    .mail {
+      font-size: 16px;
+    }
+    .address {
+      font-size: 16px;
+    }
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}*/
+/*@media (min-width: 200px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 225px !important;
+    width: %100;
+    margin-top: 80px;
+    .mail {
+      font-size: 16px;
+    }
+    .address {
+      font-size: 16px;
+    }
+    .p-number {
+      font-size: 16px;
+    }
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}*/
+/* Span icons */
+[class^="fa-phone"], [class*="fa-phone"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+  color: #1abc9c;
+  line-height: 75px !important;
+}
+
+[class^="fa-envelope-o"], [class*="fa-envelope-o"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+  color: #1abc9c;
+  line-height: 75px !important;
+}
+
+[class^="fa-map-marker"], [class*="fa-map-marker"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  color: #1abc9c;
+  font-size: 35px;
+  line-height: 75px !important;
+}
+
+/* Contact lower End */
+.blockquote-reverse {
+  margin-top: 50px;
+  height: 100px;
+  color: #1abc9c;
+}
+
+/*# sourceMappingURL=main.css.map */
