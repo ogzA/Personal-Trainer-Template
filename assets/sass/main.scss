@@ -1,6 +1,6 @@
 /* Variables */
 
-$green: #4a3;
+$green: #1abc9c;
 
 /* Normalize.css */
 section, footer, header, aside, nav {
@@ -45,7 +45,7 @@ a:hover {
                 text-transform: uppercase;
                 height: 82px;
                 &:hover {
-                color: #1abc9c !important;
+                color: $green !important;
                 visibility: visible;
                 -webkit-transition: color 0.6s;
                 -moz-transition: color 0.6s;
@@ -109,11 +109,11 @@ a:hover {
 }
 
 .text-success {
-  color: #1abc9c !important;
+  color: $green !important;
 }
 
 .text-info {
-  color: #1abc9c !important;
+  color: $green !important;
 }
 
 
@@ -129,13 +129,42 @@ a:hover {
   .contact-h2  {
     display: inline-block;
     color: #fff;
-    font-family: latoregular;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-left: 15px;
   }
 }
 
-@media (min-width: 250px) {
+@media (min-width: 769px) and (max-width: 990px ) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 250px !important;
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 100px !important;
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}
+
+/*@media (min-width: 250px) {
   .contact {
     background-color: #1a1a1a;
     height: 300px !important;
@@ -146,19 +175,18 @@ a:hover {
     .address {
       font-size: 16px;
     }
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      margin-left: 15px;
+    }
   }
-  .contact-h2  {
-    display: inline-block;
-    color: #fff;
-    font-family: latoregular;
-    font-size: 20px;
-    margin-left: 15px;
-
-  }
-}
+}*/ // Error not found
 
 
-@media (min-width: 200px) {
+/*@media (min-width: 200px) {
   .contact {
     background-color: #1a1a1a;
     height: 225px !important;
@@ -173,46 +201,24 @@ a:hover {
     .p-number {
       font-size: 16px;
     }
-  }
-
-  .contact-h2  {
-    display: inline-block;
-    color: #fff;
-    font-family: latoregular;
-    font-size: 20px;
-    margin-left: 15px;
-
-  }
-}
-
-
-@media (min-width: 768px) {
-  .contact {
-    background-color: #1a1a1a;
-    height: 100px !important;
     .contact-h2  {
       display: inline-block;
       color: #fff;
-      font-family: latoregular;
+      font-family: 'Open Sans', sans-serif;
       font-size: 20px;
       margin-left: 15px;
     }
   }
-}
+}*/ //Error not found
 
-@media (min-width: 769px) and (max-width: 990px ) {
-  .contact {
-    background-color: #1a1a1a;
-    height: 250px !important;
-    .contact-h2  {
-      display: inline-block;
-      color: #fff;
-      font-family: latoregular;
-      font-size: 20px;
-      margin-left: 15px;
-    }
-  }
-}
+
+
+
+
+
+
+
+
 
 /* Span icons */
 [class^="fa-phone"], [class*="fa-phone"] {
@@ -220,7 +226,7 @@ a:hover {
   width: 100%;
   font-size: 35px !important;
   font-weight: bold;
-  color: #1ABC9C;
+  color: $green;
   line-height: 75px !important;
 }
 
@@ -229,7 +235,7 @@ a:hover {
   width: 100%;
   font-size: 35px !important;
   font-weight: bold;
-  color: #1ABC9C;
+  color: $green;
   line-height: 75px !important;
 
 }
@@ -238,7 +244,7 @@ a:hover {
   display: inline-block;
   width: 100%;
   font-size: 35px !important;
-  color: #1ABC9C;
+  color: $green;
   font-size: 35px;
   line-height: 75px !important;
 }
@@ -248,5 +254,5 @@ a:hover {
 .blockquote-reverse {
   margin-top: 50px;
   height: 100px;
-  color: #1ABC9C;
+  color: $green;
 }
