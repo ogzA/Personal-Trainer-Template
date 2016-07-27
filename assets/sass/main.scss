@@ -115,3 +115,138 @@ a:hover {
 .text-info {
   color: #1abc9c !important;
 }
+
+
+
+/* Contact lower  */
+
+
+@media (max-width: 1024px ) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 450px !important;
+  }
+  .contact-h2  {
+    display: inline-block;
+    color: #fff;
+    font-family: latoregular;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 250px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 300px !important;
+    width: %100;
+    .mail {
+      font-size: 16px;
+    }
+    .address {
+      font-size: 16px;
+    }
+  }
+  .contact-h2  {
+    display: inline-block;
+    color: #fff;
+    font-family: latoregular;
+    font-size: 20px;
+    margin-left: 15px;
+
+  }
+}
+
+
+@media (min-width: 200px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 225px !important;
+    width: %100;
+    margin-top: 80px;
+    .mail {
+      font-size: 16px;
+    }
+    .address {
+      font-size: 16px;
+    }
+    .p-number {
+      font-size: 16px;
+    }
+  }
+
+  .contact-h2  {
+    display: inline-block;
+    color: #fff;
+    font-family: latoregular;
+    font-size: 20px;
+    margin-left: 15px;
+
+  }
+}
+
+
+@media (min-width: 768px) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 100px !important;
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: latoregular;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 990px ) {
+  .contact {
+    background-color: #1a1a1a;
+    height: 250px !important;
+    .contact-h2  {
+      display: inline-block;
+      color: #fff;
+      font-family: latoregular;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* Span icons */
+[class^="fa-phone"], [class*="fa-phone"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+  color: #1ABC9C;
+  line-height: 75px !important;
+}
+
+[class^="fa-envelope-o"], [class*="fa-envelope-o"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  font-weight: bold;
+  color: #1ABC9C;
+  line-height: 75px !important;
+
+}
+
+[class^="fa-map-marker"], [class*="fa-map-marker"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px !important;
+  color: #1ABC9C;
+  font-size: 35px;
+  line-height: 75px !important;
+}
+
+/* Contact lower End */
+
+.blockquote-reverse {
+  margin-top: 50px;
+  height: 100px;
+  color: #1ABC9C;
+}
